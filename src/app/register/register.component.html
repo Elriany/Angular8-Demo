@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-md-12">
+        <h1 class="text-center alert-danger">Registeration Form</h1>
+        <form  (ngSubmit)="saveData(subitForm)" #subitForm="ngForm" class="form-group">
+          <input type="text" #name="ngModel" ngModel class="form-control" placeholder="Enter Your name" name="name"   required>
+          <input type="text" #email="ngModel"  ngModel class="form-control" placeholder="Enter Your Email" name="email"  required>  
+          <input type="text"  #Password="ngModel" ngModel class="form-control" placeholder="Enter Your Password"  name="Password"  required>
+          <button type="submit" class="btn btn-danger btn-block">Submit</button>
+        </form>
+    </div>
+</div>
